@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Andres" />
+    <meta name="keywords" content="skydiving, news, magazine, drop zones" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Swoop - Your UK Skydiving Magazine - Home</title>
+  </head>
+  <body class="home">
+    <swoop-header></swoop-header>
+    <main>
+      <!-- the hero section with the logo and a background image -->
+      <section class="hero">
+        <div class="container">
+          <img src="./images/heroBanner.jpg" class="hero-logo" />
+          <h1 class="hidden">Swoop</h1>
+        </div>
+      </section>
+      <!-- this is the section for the news -->
+      <section class="content-section">
+        <div class="container">
+          <h2>News</h2>
+          <news-list id="newsList"></news-list>
+        </div>
+      </section>
+      <section class="content-section">
+        <div class="container quick-links">
+          <div class="quick-link-container">
+            <a href="/articles.html">
+              <span class="material-symbols quick-link-icon">feed</span>
+              Articles
+            </a>
+          </div>
+          <div class="quick-link-container">
+            <a href="/shop.html">
+              <span class="material-symbols quick-link-icon"
+                >shopping_cart</span
+              >
+              Shop
+            </a>
+          </div>
+          <div class="quick-link-container">
+            <a href="/dropzones.html">
+              <span class="material-symbols quick-link-icon"
+                >flight_takeoff</span
+              >
+              Dropzones
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <swoop-footer></swoop-footer>
+
+    <script src="/js/data/products.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/components/SwoopHeader.js"></script>
+    <script src="/js/components/SwoopFooter.js"></script>
+    <script src="/js/components/NewsList.js"></script>
+    <script src="/js/data/news.js"></script>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

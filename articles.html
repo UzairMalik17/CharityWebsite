@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="Andres" />
+        <meta name="keywords" content="skydiving, news, magazine, drop zones" />
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Swoop - Your UK Skydiving Magazine - Articles</title>
+    </head>
+    <body>
+        <swoop-header></swoop-header>
+        <main>
+            <section class="content-section">
+                <div class="title-container">
+                    <div class="container">
+                        <h1>Articles</h1>
+                    </div>
+                </div>
+                <div class="container">
+                    <!-- this is the article filter with a simple search input -->
+                    <div class="article-filter mt-2">
+                        <input
+                            type="search"
+                            id="articleSearchInput"
+                            name="articleSearch"
+                            class="form-input"
+                            autocomplete="off"
+                            placeholder="Search..."
+                        />
+                    </div>
+                    <article-list id="articleList"></article-list>
+                </div>
+            </section>
+        </main>
+        <swoop-footer></swoop-footer>
+
+        <script src="/js/data/products.js"></script>
+        <script src="/js/data/articles.js"></script>
+        <script src="/js/util.js"></script>
+        <script src="/js/components/ArticleList.js"></script>
+        <script src="/js/components/SwoopHeader.js"></script>
+        <script src="/js/components/SwoopFooter.js"></script>
+        <script src="/js/articles.js"></script>
+    </body>
+</html>

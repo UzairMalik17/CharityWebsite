@@ -1,103 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="" />
-        <meta name="author" content="Andres" />
-        <meta name="keywords" content="skydiving, news, magazine, drop zones" />
-        <link rel="stylesheet" href="css/main.css" />
-        <title>Swoop - Your UK Skydiving Magazine - About Us</title>
-    </head>
-    <body>
-        <swoop-header></swoop-header>
-        <main>
-            <!-- this is the introduction -->
-            <section class="content-section">
-                <div class="title-container">
-                    <div class="container">
-                        <h1>About us</h1>
-                    </div>
-                </div>
-                <div class="container">
-                    <p>
-                        Swoop is an online magazine for skydivers and people who are interested in skydiving. It
-                        provides information about skydiving, drop zones, events and competitions.
-                    </p>
-                    <p>
-                        Swoop was founded in 2020 by Jason Stettler, who has been skydiving for eight years. Originally
-                        working as a web designer, he decided to combine his two passions and create an online magazine
-                        for skydivers.
-                    </p>
-                    <p>
-                        Swoop is based in the UK, but has contributors from all over the world. If you are interested in
-                        contributing to Swoop, please contact us.
-                    </p>
-                </div>
-            </section>
-            <!-- here's the team grid -->
-            <section class="content-section">
-                <div class="container">
-                    <h2>The Team</h2>
-                    <team-grid id="teamGrid"></team-grid>
-                </div>
-            </section>
-            <!-- and here's the contact form section -->
-            <section class="content-section">
-                <div class="container">
-                    <h2>Contact us</h2>
-                    <!-- the actual contact form, all fields are required -->
-                    <form id="contactForm" novalidate>
-                        <div class="form-field">
-                            <label for="contactFullName">Your Name</label>
-                            <input
-                                type="text"
-                                id="contactFullName"
-                                name="fullName"
-                                class="form-input"
-                                autocomplete="name"
-                                required
-                            />
-                        </div>
-                        <div class="form-field">
-                            <label for="contactEmail">Your E-Mail</label>
-                            <input
-                                type="email"
-                                id="contactEmail"
-                                name="email"
-                                class="form-input"
-                                autocomplete="email"
-                                required
-                            />
-                        </div>
-                        <div class="form-field">
-                            <label for="contactMessage">Your Message</label>
-                            <textarea
-                                id="contactMessage"
-                                name="message"
-                                class="form-input"
-                                required
-                                rows="5"
-                            ></textarea>
-                        </div>
-                        <button type="submit" class="button">Send Message</button>
-                    </form>
-                    <!-- success message with polite aria-live so it's read out by screen readers -->
-                    <div id="contactFormSuccessAlert" class="alert alert-success mt-2 hidden" aria-live="polite">
-                        <b>Thank you for your message.</b><br />
-                        We will get back to you as soon as possible.
-                    </div>
-                </div>
-            </section>
-        </main>
-        <swoop-footer></swoop-footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Andres" />
+    <meta name="keywords" content="skydiving, news, magazine, drop zones" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <link
+      class="w-2"
+      rel="icon"
+      type="image/png"
+      href="images/logo-removebg-preview.png" />
+    <title>WaterAid | Contact us</title>
+  </head>
+  <body>
+    <swoop-header></swoop-header>
+    <main class="w-full flex flex-col items-start justify-start gap-8">
+      <!-- this is the introduction -->
+      <section
+        class="w-full h-[50vh] flex items-center justify-end bg-center bg-cover bg-no-repeat p-6"
+        style="background-image: url('images/contactusHero.jpg')">
+        <p
+          class="w-full md:w-1/2 lg:w-1/3 text-5xl bg-black bg-opacity-50 text-[#43ccde] font-semibold rounded-lg p-6">
+          Get in Touch with WaterAid
+        </p>
+      </section>
+      <form
+        class="w-full max-w-[1280px] flex flex-col gap-6 items-start justify-start mx-auto md:px-12 px-8">
+        <input
+          class="w-full md:w-1/2 formInput"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your Name"
+          required />
+        <input
+          class="w-full md:w-1/2 formInput"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required />
+        <textarea
+          class="w-full md:w-1/2 formInput"
+          name="message"
+          placeholder="Enter message here..."
+          required></textarea>
+        <input
+          class="bg-[#43ccde] rounded cursor-pointer text-black text-lg py-1 px-4"
+          type="submit"
+          value="Submit" />
+      </form>
+    </main>
 
-        <script src="/js/data/products.js"></script>
-        <script src="/js/data/teamMembers.js"></script>
-        <script src="/js/util.js"></script>
-        <script src="/js/components/TeamGrid.js"></script>
-        <script src="/js/components/SwoopHeader.js"></script>
-        <script src="/js/components/SwoopFooter.js"></script>
-        <script src="/js/about-us.js"></script>
-    </body>
+    <script src="/js/data/products.js"></script>
+    <script src="/js/data/teamMembers.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/components/TeamGrid.js"></script>
+    <script src="/js/components/SwoopHeader.js"></script>
+    <script src="/js/components/SwoopFooter.js"></script>
+    <script src="/js/about-us.js"></script>
+  </body>
 </html>

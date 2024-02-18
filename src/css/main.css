@@ -12,11 +12,11 @@
   align-items: center;
   justify-content: center;
   box-shadow: 1px 1px 12px 1px rgb(166, 168, 168);
-  background-color: aquamarine;
+  background-color: #4cfcc1;
   transition: transform 200ms, background-color 200ms;
 }
 .navigationCard:hover {
-  background-color: #43ccde;
+  background-color: #37bdcf;
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -30,9 +30,9 @@
   padding: 8px;
   border-style: solid;
   border-width: 2px;
-  border-color: aquamarine;
+  border-color: #4cfcc1;
   outline: none;
 }
 .formInput:focus {
-  border-color: #43ccde;
+  border-color: #37bdcf;
 }

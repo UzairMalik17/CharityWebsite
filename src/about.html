@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="" />
-        <meta name="author" content="Andres" />
-        <meta name="keywords" content="skydiving, news, magazine, drop zones" />
-        <link rel="stylesheet" href="css/main.css" />
-        <title>Swoop - Your UK Skydiving Magazine - Articles</title>
-    </head>
-    <body>
-        <swoop-header></swoop-header>
-        <main>
-            <section class="content-section">
-                <div class="title-container">
-                    <div class="container">
-                        <h1>Articles</h1>
-                    </div>
-                </div>
-                <div class="container">
-                    <!-- this is the article filter with a simple search input -->
-                    <div class="article-filter mt-2">
-                        <input
-                            type="search"
-                            id="articleSearchInput"
-                            name="articleSearch"
-                            class="form-input"
-                            autocomplete="off"
-                            placeholder="Search..."
-                        />
-                    </div>
-                    <article-list id="articleList"></article-list>
-                </div>
-            </section>
-        </main>
-        <swoop-footer></swoop-footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="Andres" />
+    <meta name="keywords" content="skydiving, news, magazine, drop zones" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <link
+      class="w-2"
+      rel="icon"
+      type="image/png"
+      href="images/logo-removebg-preview.png" />
+    <title>WaterAid | About</title>
+  </head>
+  <body>
+    <swoop-header></swoop-header>
+    <main class="w-full flex flex-col items-start justify-start gap-8">
+      <section
+        class="w-full h-[50vh] flex items-center justify-end bg-center bg-cover bg-no-repeat p-6"
+        style="background-image: url('images/aboutHero.jpg')">
+        <p
+          class="w-full md:w-1/2 lg:w-1/3 text-5xl bg-black bg-opacity-50 text-[#43ccde] font-semibold rounded-lg p-6">
+          About WaterAid
+        </p>
+      </section>
+      <section
+        class="w-full max-w-[1280px] flex flex-col items-center justify-start gap-4 mx-auto md:px-12 px-8">
+        <p class="text-5xl text-[#43ccde]">Our Mission and Impact</p>
+        <p class="text-lg">
+          Welcome to WaterAid, where we're dedicated to transforming lives
+          through access to clean water, sanitation, and hygiene. For over four
+          decades, we've been at the forefront of the global effort to ensure
+          that everyone, everywhere has access to these basic human rights.
+        </p>
+        <p class="text-lg">
+          Our mission is simple yet profound: to make clean water, decent
+          toilets, and good hygiene normal for everyone, everywhere within a
+          generation. We work tirelessly in some of the world's toughest places
+          to reach the most marginalized communities, empowering them with
+          sustainable solutions that last.
+        </p>
+        <p class="text-lg">
+          Through partnerships with local organizations, governments, and
+          communities, we implement projects that not only provide immediate
+          access to clean water and sanitation but also promote long-term
+          behavior change and community ownership. With your support, we've been
+          able to reach millions of people with life-changing services, but
+          there's still much work to be done.
+        </p>
+        <p class="text-lg">
+          Join us in our mission to create a world where no one is left behind
+          because of a lack of clean water or sanitation. Together, we can make
+          a difference.
+        </p>
+      </section>
+    </main>
+    <swoop-footer></swoop-footer>
 
-        <script src="/js/data/products.js"></script>
-        <script src="/js/data/articles.js"></script>
-        <script src="/js/util.js"></script>
-        <script src="/js/components/ArticleList.js"></script>
-        <script src="/js/components/SwoopHeader.js"></script>
-        <script src="/js/components/SwoopFooter.js"></script>
-        <script src="/js/articles.js"></script>
-    </body>
+    <script src="/js/data/products.js"></script>
+    <script src="/js/data/articles.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/components/ArticleList.js"></script>
+    <script src="/js/components/SwoopHeader.js"></script>
+    <script src="/js/components/SwoopFooter.js"></script>
+    <script src="/js/articles.js"></script>
+  </body>
 </html>

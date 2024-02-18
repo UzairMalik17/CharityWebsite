@@ -27,40 +27,40 @@
           Get in Touch with WaterAid
         </p>
       </section>
-      <form
-        class="w-full max-w-[1280px] flex flex-col gap-6 items-start justify-start mx-auto md:px-12 px-8">
-        <input
-          class="w-full md:w-1/2 formInput"
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your Name"
-          required />
-        <input
-          class="w-full md:w-1/2 formInput"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email"
-          required />
-        <textarea
-          class="w-full md:w-1/2 formInput"
-          name="message"
-          placeholder="Enter message here..."
-          required></textarea>
-        <input
-          class="bg-[#43ccde] rounded cursor-pointer text-black text-lg py-1 px-4"
-          type="submit"
-          value="Submit" />
-      </form>
+      <section
+        class="w-full max-w-[1280px] grid md:grid-cols-2 gap-12 mx-auto md:px-12 px-8">
+        <form class="w-full flex flex-col gap-6 items-start justify-start">
+          <input
+            class="formInput"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required />
+          <input
+            class="formInput"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required />
+          <textarea
+            class="formInput"
+            name="message"
+            placeholder="Enter message here..."
+            required></textarea>
+          <input
+            class="bg-[#43ccde] rounded cursor-pointer text-black text-lg py-1 px-4"
+            type="submit"
+            value="Submit" />
+        </form>
+        <div class="w-full h-full flex items-center justify-center">
+          <img class="md:inline-block hidden" src="images/contactusForm.png" />
+        </div>
+      </section>
     </main>
 
-    <script src="/js/data/products.js"></script>
-    <script src="/js/data/teamMembers.js"></script>
-    <script src="/js/util.js"></script>
-    <script src="/js/components/TeamGrid.js"></script>
-    <script src="/js/components/SwoopHeader.js"></script>
-    <script src="/js/components/SwoopFooter.js"></script>
-    <script src="/js/about-us.js"></script>
+    <script src="js/components/SwoopHeader.js"></script>
+    <script src="js/components/SwoopFooter.js"></script>
   </body>
 </html>

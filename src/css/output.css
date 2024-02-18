@@ -879,6 +879,11 @@ video {
   color: rgb(55 189 207 / var(--tw-text-opacity));
 }
 
+.hover\:text-brand-off:hover {
+  --tw-text-opacity: 1;
+  color: rgb(76 252 193 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:inline-block {
     display: inline-block;

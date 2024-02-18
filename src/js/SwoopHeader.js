@@ -27,7 +27,7 @@ class SwoopHeader extends HTMLElement {
             ${menu
               .map(
                 (item) => `
-              <a class="text-base md:text-lg text-black hover:text-brand-main" href="${item.route}">
+              <a class="text-base md:text-lg text-black hover:text-brand-off" href="${item.route}">
                 ${item.name}
               </a>
             `

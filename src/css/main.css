@@ -36,3 +36,7 @@
 .formInput:focus {
   border-color: #37bdcf;
 }
+#targetDiv {
+  display: none;
+  color: #f0f0f0;
+}

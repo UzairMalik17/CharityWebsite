@@ -59,12 +59,12 @@ class SwoopHeader extends HTMLElement {
             `
               )
               .join("")}
-              <img id="toggleMode1" class="bg-transparent hover:bg-light-background cursor-pointer rounded-full" src="./images/day-and-night.png"/>
+              <img id="toggleMode1" class="bg-transparent hover:bg-light-background cursor-pointer rounded-full" src="./images/navbar/day-and-night.png"/>
            </div>
-           <img src="./images/menu.png" class="inline-block md:hidden cursor-pointer" id="BurgerButton">
+           <img src="./images/navbar/menu.png" class="inline-block md:hidden cursor-pointer" id="BurgerButton">
            <div id="targetDiv" class="w-full sm:w-2/3 flex flex-col items-start justify-start bg-blend-darken bg-opacity-80 bg-brand-main absolute top-14 left-0 p-8">
            <button class="w-full flex items-center justify-end">
-           <img src="./images/cancel.png" class="bg-red-400 rounded-full" id="cancelButton"/></button>
+           <img src="./images/navbar/cancel.png" class="bg-red-400 rounded-full" id="cancelButton"/></button>
            <div class="flex flex-col items-start justify-start gap-12">
             ${menu
               .map(
@@ -75,7 +75,7 @@ class SwoopHeader extends HTMLElement {
             `
               )
               .join("")}
-              <img id="toggleMode2" class="bg-transparent hover:bg-light-background cursor-pointer rounded-full" src="./images/day-and-night.png"/>
+              <img id="toggleMode2" class="bg-transparent hover:bg-light-background cursor-pointer rounded-full" src="./images/navbar/day-and-night.png"/>
            </div>
            </div>
         </nav>

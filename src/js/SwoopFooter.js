@@ -7,23 +7,23 @@ class SwoopFooter extends HTMLElement {
   render() {
     const social = [
       {
-        img: "./images/facebook.png",
+        img: "./images/socials/facebook.png",
         route: "./donation.html",
       },
       {
-        img: "./images/instagram.png",
+        img: "./images/socials/instagram.png",
         route: "./donation.html",
       },
       {
-        img: "./images/linkedin.png",
+        img: "./images/socials/linkedin.png",
         route: "./donation.html",
       },
       {
-        img: "./images/twitter.png",
+        img: "./images/socials/twitter.png",
         route: "./donation.html",
       },
       {
-        img: "./images/youtube.png",
+        img: "./images/socials/youtube.png",
         route: "./donation.html",
       },
     ];

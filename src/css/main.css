@@ -38,5 +38,9 @@
 }
 #targetDiv {
   display: none;
-  color: #f0f0f0;
+  color: #474747;
+}
+.factsText {
+  color: #37bdcf;
+  font-weight: 700;
 }

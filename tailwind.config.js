@@ -8,6 +8,13 @@ module.exports = {
           main: "#37bdcf",
           off: "#4cfcc1",
         },
+        light: {
+          background: "#f0f0f0",
+        },
+        dark: {
+          main: "#121212",
+          background: "#474747",
+        },
       },
     },
   },

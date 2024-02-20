@@ -30,6 +30,10 @@ class SwoopHeader extends HTMLElement {
         name: "Contact Us",
         route: "./contactUs.html",
       },
+      {
+        name: "Facts",
+        route: "./facts.html",
+      },
     ];
 
     this.innerHTML = `
@@ -47,7 +51,7 @@ class SwoopHeader extends HTMLElement {
               .join("")}
            </div>
            <img src="./images/menu.png" class="inline-block md:hidden cursor-pointer" id="BurgerButton">
-           <div id="targetDiv" class="w-full sm:w-2/3 h-[300px] flex flex-col items-start justify-start bg-blend-darken bg-opacity-80 bg-brand-main absolute top-14 left-0 p-8">
+           <div id="targetDiv" class="w-full sm:w-2/3 flex flex-col items-start justify-start bg-blend-darken bg-opacity-80 bg-brand-main absolute top-14 left-0 p-8">
            <button class="w-full flex items-center justify-end">
            <img src="./images/cancel.png" class="bg-red-400 rounded-full" id="cancelButton"/></button>
            <div class="flex flex-col items-start justify-start gap-12">

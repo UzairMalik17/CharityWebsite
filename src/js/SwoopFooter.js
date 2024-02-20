@@ -29,7 +29,8 @@ class SwoopFooter extends HTMLElement {
     ];
 
     this.innerHTML = `
-          <footer class="w-full max-w-[1280px] flex flex-col bg-[#f0f0f0] items-center sm:items-start justify-start gap-12 rounded-lg mx-auto md:px-12 px-8 py-8">
+          <footer class="w-full bg-background">
+          <section class="w-full max-w-[1280px] flex flex-col items-center sm:items-start justify-start gap-12 rounded-lg mx-auto md:px-12 px-8 py-8">
           <div class="w-full h-[1px] bg-brand-main"></div>
           <div class="w-full grid grid-cols-2 min-[428px]:flex min-[428px]:flex-row items-center justify-start gap-8">
           ${social
@@ -47,6 +48,7 @@ class SwoopFooter extends HTMLElement {
           <p>WaterAid arbetar för att alla ska ha tillgång till rent vatten, sanitet och hygien</p>
           <p>©Copyright WaterAid</p>
           </div>
+          </section>
           </footer>
         `;
   }

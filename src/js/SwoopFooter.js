@@ -8,23 +8,23 @@ class SwoopFooter extends HTMLElement {
     const social = [
       {
         img: "./images/socials/facebook.png",
-        route: "./donation.html",
+        route: "https://www.facebook.com/wateraid/",
       },
       {
         img: "./images/socials/instagram.png",
-        route: "./donation.html",
+        route: "https://www.instagram.com/wateraid/",
       },
       {
         img: "./images/socials/linkedin.png",
-        route: "./donation.html",
+        route: "https://www.linkedin.com/company/wateraid",
       },
       {
         img: "./images/socials/twitter.png",
-        route: "./donation.html",
+        route: "https://twitter.com/wateraid/",
       },
       {
         img: "./images/socials/youtube.png",
-        route: "./donation.html",
+        route: "https://www.youtube.com/WaterAid",
       },
     ];
 

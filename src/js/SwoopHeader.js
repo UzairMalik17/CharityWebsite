@@ -14,6 +14,16 @@ class SwoopHeader extends HTMLElement {
       const targetDiv = document.getElementById("targetDiv");
       targetDiv.style.display = "none";
     });
+
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle("dark");
+    }
+
+    const modeChanger1 = document.getElementById("toggleMode1");
+    modeChanger1.addEventListener("click", toggleDarkMode);
+
+    const modeChanger2 = document.getElementById("toggleMode2");
+    modeChanger2.addEventListener("click", toggleDarkMode);
   }
 
   render() {
@@ -49,6 +59,7 @@ class SwoopHeader extends HTMLElement {
             `
               )
               .join("")}
+              <img id="toggleMode1" class="bg-transparent hover:bg-light-background cursor-pointer rounded-full" src="./images/day-and-night.png"/>
            </div>
            <img src="./images/menu.png" class="inline-block md:hidden cursor-pointer" id="BurgerButton">
            <div id="targetDiv" class="w-full sm:w-2/3 flex flex-col items-start justify-start bg-blend-darken bg-opacity-80 bg-brand-main absolute top-14 left-0 p-8">
@@ -64,6 +75,7 @@ class SwoopHeader extends HTMLElement {
             `
               )
               .join("")}
+              <img id="toggleMode2" class="bg-transparent hover:bg-light-background cursor-pointer rounded-full" src="./images/day-and-night.png"/>
            </div>
            </div>
         </nav>

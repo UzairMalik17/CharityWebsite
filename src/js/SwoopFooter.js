@@ -29,7 +29,7 @@ class SwoopFooter extends HTMLElement {
     ];
 
     this.innerHTML = `
-          <footer class="w-full bg-background">
+          <footer class="w-full bg-light-background dark:bg-dark-background dark:text-white transition-colors duration-500">
           <section class="w-full max-w-[1280px] flex flex-col items-center sm:items-start justify-start gap-12 rounded-lg mx-auto md:px-12 px-8 py-8">
           <div class="w-full h-[1px] bg-brand-main"></div>
           <div class="w-full grid grid-cols-2 min-[428px]:flex min-[428px]:flex-row items-center justify-start gap-8">
@@ -37,7 +37,7 @@ class SwoopFooter extends HTMLElement {
             .map(
               (item) => `
               <a href="${item.route}">
-                <img class="border-[1px] border-brand-main hover:bg-brand-main rounded-full p-2" src="${item.img}"/>
+                <img class="border-[1px] border-brand-main bg-light-background hover:bg-brand-main rounded-full p-2" src="${item.img}"/>
               </a>
             `
             )

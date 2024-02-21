@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <title>WaterAid | Press Release</title>
+  </head>
+  <!-- social icons from Icon8.com website
+      Other icons are google icons
+      the logo for wateraid is taken from website
+      Hero images are stock from pexels.com  -->
+  <body>
+    <wateraid-header></wateraid-header>
+    <main
+      class="w-full h-full flex flex-col items-center justify-start gap-8 dark:bg-dark-main dark:text-white transition-colors duration-500 pb-6">
+      <!-- the hero section with the logo and a background image -->
+      <section
+        class="w-full h-screen flex items-center justify-end bg-cover bg-center bg-no-repeat p-6"
+        style="background-image: url('images/pressroom/pressHero.jpg')">
+        <p
+          class="w-full md:w-1/2 lg:w-1/3 text-6xl bg-black bg-opacity-50 text-brand-main font-semibold rounded-lg p-6">
+          WaterAid Press Release
+        </p>
+      </section>
+      <!-- this is the section for the Cards -->
+      <section
+        class="w-full max-w-[1280px] mx-auto md:px-12 px-8 grid md:grid-cols-3 gap-8">
+        <a
+          class="pressCard bg-light-background dark:bg-dark-background"
+          href="https://www.wateraid.org/se/blog/carlsberg-och-wateraid-inleder-samarbete-for-att-bekampa-vattenbrist-i-sodra-indien">
+          <img src="./images/pressroom/cleanwater.jpeg" class="rounded" />
+          <p class="text-2xl font-semibold text-brand-main">
+            Carlsberg and WaterAid begin collaboration to fight water shortages
+            in southern India
+          </p>
+        </a>
+
+        <section class="pressCard bg-light-background dark:bg-dark-background">
+          <img src="./images/pressroom/weatherchange.jpeg" class="rounded" />
+          <p class="text-2xl font-semibold text-brand-main">
+            New research shows how extreme weather changes are devastating
+            millions of lives
+          </p>
+        </section>
+
+        <a
+          class="pressCard bg-light-background dark:bg-dark-background"
+          href="https://www.wateraid.org/se/blog/ny-rapport-om-kvinnors-egenmakt">
+          <img src="./images/pressroom/womenempowerment.jpeg" class="rounded" />
+          <p class="text-2xl font-semibold text-brand-main">
+            New report on women's empowerment
+          </p>
+        </a>
+
+        <a
+          class="pressCard bg-light-background dark:bg-dark-background"
+          href="https://www.wateraid.org/se/blog/blogg-besok-i-uganda-nya-projekt-pa-gang">
+          <img src="./images/pressroom/blogg.jpeg" class="rounded" />
+          <p class="text-2xl font-semibold text-brand-main">
+            BLOG: Visit to Uganda - new projects underway
+          </p>
+        </a>
+
+        <a
+          class="pressCard bg-light-background dark:bg-dark-background"
+          href="https://www.wateraid.org/se/blog/wateraid-anvander-schackspel-for-att-belysa-menshalsa">
+          <img src="./images/pressroom/menstrualhealth.jpeg" class="rounded" />
+          <p class="text-2xl font-semibold text-brand-main">
+            WaterAid uses chess games to highlight menstrual health
+          </p>
+        </a>
+
+        <a
+          class="pressCard bg-light-background dark:bg-dark-background"
+          href="https://www.wateraid.org/se/blog/9-saker-att-ha-koll-pa-i-en-kris-nar-det-galler-vatten">
+          <img src="./images/pressroom/water.jpeg" class="rounded" />
+          <p class="text-2xl font-semibold text-brand-main">
+            9 things to keep in mind in a water crisis
+          </p>
+        </a>
+      </section>
+    </main>
+
+    <wateraid-footer></wateraid-footer>
+    <script src="js/WaterAidHeader.js"></script>
+    <script src="js/WaterAidFooter.js"></script>
+    <script src="js/IndexFactCard.js"></script>
+  </body>
+</html>

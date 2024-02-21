@@ -13,13 +13,13 @@
       the logo for wateraid is taken from website
       Hero images are stock from pexels.com  -->
   <body>
-    <swoop-header></swoop-header>
+    <wateraid-header></wateraid-header>
     <main
       class="w-full h-full flex flex-col items-center justify-start gap-6 dark:bg-dark-main dark:text-white transition-colors duration-500 pb-6">
       <!-- the hero section with the logo and a background image -->
       <section
         class="w-full h-screen flex items-center justify-end bg-cover bg-center bg-no-repeat p-6"
-        style="background-image: url('images/hero.jpg')">
+        style="background-image: url('images/indexHero.jpg')">
         <p
           class="w-full md:w-1/2 lg:w-1/3 text-6xl bg-black bg-opacity-50 text-brand-main font-semibold rounded-lg p-6">
           Clean Water for All: Join Us in Making a Difference Today!
@@ -40,11 +40,45 @@
           <img class="navigationIcon" src="images/contact.svg" />
           <p class="text-2xl">Contact Us</p>
         </a>
+        <section
+          class="indexFactCard bg-light-background dark:bg-dark-background">
+          <p class="text-3xl text-brand-main font-semibold">Water</p>
+          <p class="text-lg">
+            Water is a basic human right, but one tenth of the world's
+            population does not have access to clean water.
+          </p>
+        </section>
+        <section
+          class="indexFactCard bg-light-background dark:bg-dark-background">
+          <p class="text-3xl text-brand-main font-semibold">Toilets</p>
+          <p class="text-lg">
+            1.5 billion people – almost a fifth of the world's population – do
+            not have a proper toilet to go to.
+          </p>
+        </section>
+        <section
+          class="indexFactCard bg-light-background dark:bg-dark-background">
+          <p class="text-3xl text-brand-main font-semibold">Hygiene</p>
+          <p class="text-lg">
+            Hygiene is crucial for improvements in water, sanitation, health and
+            healthcare to be sustainable.
+          </p>
+        </section>
+        <section
+          class="indexFactCard bg-light-background dark:bg-dark-background">
+          <p class="text-3xl text-brand-main font-semibold">
+            Stories from our work
+          </p>
+          <p class="text-lg">
+            Clean water, improved hygiene and toilets change lives. In these
+            stories you can read about the difference yourself.
+          </p>
+        </section>
       </section>
     </main>
 
-    <swoop-footer></swoop-footer>
-    <script src="js/SwoopHeader.js"></script>
-    <script src="js/SwoopFooter.js"></script>
+    <wateraid-footer></wateraid-footer>
+    <script src="js/WaterAidHeader.js"></script>
+    <script src="js/WaterAidFooter.js"></script>
   </body>
 </html>

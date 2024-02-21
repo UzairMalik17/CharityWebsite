@@ -44,3 +44,27 @@
   color: #37bdcf;
   font-weight: 700;
 }
+.indexFactCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 8px;
+  padding: 24px 16px;
+  box-shadow: 1px 1px 12px 1px rgb(166, 168, 168);
+}
+.pressCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 32px;
+  cursor: pointer;
+  box-shadow: 1px 1px 12px 1px rgb(166, 168, 168);
+  transition: all 200ms;
+}
+.pressCard:hover {
+  padding: 16px;
+}

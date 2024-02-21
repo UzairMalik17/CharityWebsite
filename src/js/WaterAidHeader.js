@@ -1,4 +1,4 @@
-class SwoopHeader extends HTMLElement {
+class WaterAidHeader extends HTMLElement {
   constructor() {
     super();
     this.render();
@@ -6,13 +6,14 @@ class SwoopHeader extends HTMLElement {
     const navToggleButton = document.getElementById("BurgerButton");
     navToggleButton.addEventListener("click", () => {
       const targetDiv = document.getElementById("targetDiv");
-      targetDiv.style.display = "inline-block";
-    });
-
-    const cancelButton = document.getElementById("cancelButton");
-    cancelButton.addEventListener("click", () => {
-      const targetDiv = document.getElementById("targetDiv");
-      targetDiv.style.display = "none";
+      if (
+        targetDiv.style.display === "none" ||
+        targetDiv.style.display === ""
+      ) {
+        targetDiv.style.display = "inline-block";
+      } else {
+        targetDiv.style.display = "none";
+      }
     });
 
     function toggleDarkMode() {
@@ -44,6 +45,10 @@ class SwoopHeader extends HTMLElement {
         name: "Facts",
         route: "./facts.html",
       },
+      {
+        name: "Press Release",
+        route: "./press.html",
+      },
     ];
 
     this.innerHTML = `
@@ -53,7 +58,7 @@ class SwoopHeader extends HTMLElement {
             ${menu
               .map(
                 (item) => `
-              <a class="text-base md:text-lg text-black hover:text-brand-off hover:bg-black rounded-lg px-2" href="${item.route}">
+              <a class="text-base md:text-lg text-black hover:text-brand-off hover:bg-black hover:scale-110 transition-all duration-200 rounded-lg px-2" href="${item.route}">
                 ${item.name}
               </a>
             `
@@ -62,14 +67,12 @@ class SwoopHeader extends HTMLElement {
               <img id="toggleMode1" class="bg-transparent hover:bg-light-background cursor-pointer rounded-full" src="./images/navbar/day-and-night.png"/>
            </div>
            <img src="./images/navbar/menu.png" class="inline-block md:hidden cursor-pointer" id="BurgerButton">
-           <div id="targetDiv" class="w-full sm:w-2/3 flex flex-col items-start justify-start bg-blend-darken bg-opacity-80 bg-brand-main absolute top-14 left-0 p-8">
-           <button class="w-full flex items-center justify-end">
-           <img src="./images/navbar/cancel.png" class="bg-red-400 rounded-full" id="cancelButton"/></button>
-           <div class="flex flex-col items-start justify-start gap-12">
+           <div id="targetDiv" class="w-full sm:w-2/3 flex flex-col items-start justify-start transition-all duration-200 bg-opacity-80 bg-brand-main absolute top-14 left-0 p-8">
+           <div class="flex flex-col items-start justify-start gap-8">
             ${menu
               .map(
                 (item) => `
-              <a class="text-base md:text-lg text-black hover:text-brand-off hover:bg-black rounded-lg px-2" href="${item.route}">
+              <a class="text-base md:text-lg text-black hover:text-brand-off hover:bg-black hover:scale-110 transition-all duration-200 rounded-lg px-2" href="${item.route}">
                 ${item.name}
               </a>
             `
@@ -83,4 +86,4 @@ class SwoopHeader extends HTMLElement {
   }
 }
 
-customElements.define("swoop-header", SwoopHeader);
+customElements.define("wateraid-header", WaterAidHeader);

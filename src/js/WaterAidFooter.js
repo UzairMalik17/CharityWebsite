@@ -1,4 +1,4 @@
-class SwoopFooter extends HTMLElement {
+class WaterAidFooter extends HTMLElement {
   constructor() {
     super();
     this.render();
@@ -54,4 +54,4 @@ class SwoopFooter extends HTMLElement {
   }
 }
 
-customElements.define("swoop-footer", SwoopFooter);
+customElements.define("wateraid-footer", WaterAidFooter);

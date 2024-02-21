@@ -762,6 +762,10 @@ video {
   padding: 2rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -798,6 +802,10 @@ video {
 
 .pb-6 {
   padding-bottom: 1.5rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
 }
 
 .text-2xl {
@@ -931,6 +939,12 @@ video {
   border-radius: 8px;
   padding: 24px 16px;
   box-shadow: 1px 1px 12px 1px rgb(166, 168, 168);
+  cursor: pointer;
+  transition: transform 200ms;
+}
+
+.indexFactCard:hover {
+  transform: scale(1.1);
 }
 
 .pressCard {
@@ -1022,6 +1036,10 @@ video {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:w-1\/2 {

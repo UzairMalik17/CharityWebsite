@@ -52,6 +52,11 @@
   border-radius: 8px;
   padding: 24px 16px;
   box-shadow: 1px 1px 12px 1px rgb(166, 168, 168);
+  cursor: pointer;
+  transition: transform 200ms;
+}
+.indexFactCard:hover {
+  transform: scale(1.1);
 }
 .pressCard {
   width: 100%;

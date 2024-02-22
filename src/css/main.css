@@ -40,6 +40,11 @@
   display: none;
   color: #474747;
 }
+.factsCard {
+  border-radius: 8px;
+  padding: 32px 16px;
+  box-shadow: 1px 1px 12px 1px rgb(166, 168, 168);
+}
 .factsText {
   color: #37bdcf;
   font-weight: 700;

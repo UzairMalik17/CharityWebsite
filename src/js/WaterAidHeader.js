@@ -16,17 +16,54 @@ class WaterAidHeader extends HTMLElement {
       }
     });
 
-    function toggleDarkMode() {
-      document.documentElement.classList.toggle("dark");
+    // Java script document to toggle the Dark Mode.
+    // Listen for the DOMContentLoaded event
+    // which fires when the initial HTML document has been loaded.
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get the dark mode toggle button by its ID
+      const modeChanger1 = document.getElementById("toggleMode1");
+      const modeChanger2 = document.getElementById("toggleMode2");
+
+      // Retrieve the dark mode state from localStorage and convert it to a boolean.
+      var toggled = localStorage.getItem("darkMode") === "true";
+
+      // Call the function to apply the current dark mode state
+      updateDarkMode();
+
+      // Add an event listener for click events on the dark mode toggle button
+      modeChanger1.addEventListener("click", toggleDarkMode);
+      modeChanger2.addEventListener("click", toggleDarkMode);
+      function toggleDarkMode() {
+        // Toggle the dark mode state, or untoggled if it is already toggled.
+        toggled = !toggled;
+        // Save the new dark mode state in localStorage
+        localStorage.setItem("darkMode", toggled);
+        // Update the UI to reflect the new dark mode state
+        updateDarkMode();
+      }
+
+      // Define the function to update the UI based on the dark mode state
+      function updateDarkMode() {
+        // If dark mode is enabled, add the 'dark' class to the body
+        if (toggled) {
+          document.body.classList.add("dark");
+        } else {
+          // Otherwise, remove the 'dark' class from the body
+          document.body.classList.remove("dark");
+        }
+      }
+    });
+
+    // function toggleDarkMode() {
+    /*   document.documentElement.classList.toggle("dark");
     }
 
     const modeChanger1 = document.getElementById("toggleMode1");
     modeChanger1.addEventListener("click", toggleDarkMode);
 
     const modeChanger2 = document.getElementById("toggleMode2");
-    modeChanger2.addEventListener("click", toggleDarkMode);
+    modeChanger2.addEventListener("click", toggleDarkMode);*/
   }
-
   render() {
     const menu = [
       {

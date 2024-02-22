@@ -565,6 +565,10 @@ video {
   margin-right: auto;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -762,10 +766,6 @@ video {
   padding: 2rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -798,14 +798,6 @@ video {
 
 .pb-12 {
   padding-bottom: 3rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
 }
 
 .text-2xl {
@@ -860,6 +852,12 @@ video {
 .text-brand-main {
   --tw-text-opacity: 1;
   color: rgb(55 189 207 / var(--tw-text-opacity));
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .transition-all {
@@ -924,6 +922,12 @@ video {
 #targetDiv {
   display: none;
   color: #474747;
+}
+
+.factsCard {
+  border-radius: 8px;
+  padding: 32px 16px;
+  box-shadow: 1px 1px 12px 1px rgb(166, 168, 168);
 }
 
 .factsText {
